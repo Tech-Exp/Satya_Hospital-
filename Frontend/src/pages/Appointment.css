@@ -1,0 +1,49 @@
+.appointment-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.appointment-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.appointment-header h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.appointment-header p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.direct-appointment-wrapper {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .appointment-container {
+    padding: 20px 15px;
+  }
+  
+  .appointment-header h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .appointment-header h2 {
+    font-size: 1.5rem;
+  }
+}

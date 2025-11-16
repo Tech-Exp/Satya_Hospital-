@@ -1,0 +1,19 @@
+{
+  "name": "satya-hospital-runner",
+  "version": "1.0.0",
+  "description": "Runner for Satya Hospital project",
+  "main": "index.js",
+  "scripts": {
+    "backend": "cd ../Backend && npm start",
+    "frontend": "cd ../Frontend && npm run dev",
+    "dashboard": "cd ../Dashboard && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "dev:all": "concurrently \"npm run backend\" \"npm run frontend\" \"npm run dashboard\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

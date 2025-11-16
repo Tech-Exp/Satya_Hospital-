@@ -1,0 +1,43 @@
+.hero-cta {
+  margin-top: 30px;
+}
+
+.hero-appointment-btn {
+  background: linear-gradient(135deg, #3939d9 0%, #271776 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(57, 57, 217, 0.3);
+  transition: all 0.3s ease;
+}
+
+.hero-appointment-btn:hover {
+  box-shadow: 0 8px 25px rgba(57, 57, 217, 0.4);
+  transform: translateY(-2px);
+}
+
+.hero-cta-note {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero-appointment-btn {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+  
+  .hero-cta {
+    margin-top: 20px;
+  }
+}

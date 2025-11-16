@@ -1,0 +1,331 @@
+/* AddDoctor.css */
+.add-doctor-container {
+  background-color: #f8fafc;
+  min-height: 100vh;
+  margin-top: 70px;
+  padding: 30px;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-doctor-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.add-doctor-title {
+  font-size: 28px;
+  color: #162447;
+  margin: 0;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.add-doctor-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 40px;
+  height: 3px;
+  background: linear-gradient(90deg, #0053a2, #b3e000);
+  border-radius: 3px;
+}
+
+.add-doctor-form-container {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.add-doctor-form-header {
+  background: linear-gradient(135deg, #0053a2, #003b76);
+  padding: 25px 30px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.add-doctor-form-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.add-doctor-form-subtitle {
+  font-size: 14px;
+  opacity: 0.8;
+  margin: 5px 0 0;
+  position: relative;
+  z-index: 2;
+}
+
+.form-decoration {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 70%);
+  z-index: 1;
+}
+
+.decoration-1 {
+  width: 200px;
+  height: 200px;
+  top: -100px;
+  right: -50px;
+}
+
+.decoration-2 {
+  width: 150px;
+  height: 150px;
+  bottom: -70px;
+  left: 30%;
+}
+
+.add-doctor-form-body {
+  padding: 30px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-col {
+  flex: 1;
+  min-width: 0; /* Prevents flex items from overflowing */
+}
+
+.form-col-2 {
+  flex: 2;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 8px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #334155;
+  transition: all 0.2s ease;
+  background-color: #f8fafc;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #0053a2;
+  box-shadow: 0 0 0 3px rgba(0, 83, 162, 0.1);
+  background-color: white;
+}
+
+.form-control::placeholder {
+  color: #94a3b8;
+}
+
+.form-select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #334155;
+  transition: all 0.2s ease;
+  background-color: #f8fafc;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+  background-size: 10px;
+  padding-right: 40px;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: #0053a2;
+  box-shadow: 0 0 0 3px rgba(0, 83, 162, 0.1);
+  background-color: white;
+}
+
+.form-select option {
+  padding: 10px;
+}
+
+.form-file-wrapper {
+  position: relative;
+}
+
+.doctor-preview-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border: 5px solid #f8fafc;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.doctor-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.file-upload-btn {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.file-upload-btn:hover {
+  background-color: #f1f5f9;
+  border-color: #94a3b8;
+  color: #334155;
+}
+
+.file-upload-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.form-footer {
+  padding: 20px 30px;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #0053a2, #003b76);
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 83, 162, 0.2);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 6px 15px rgba(0, 83, 162, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #f8fafc;
+  color: #64748b;
+  border: 1px solid #e2e8f0;
+}
+
+.btn-secondary:hover {
+  background-color: #f1f5f9;
+  color: #334155;
+}
+
+.form-info {
+  background-color: #f0f9ff;
+  border-left: 4px solid #0284c7;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #0369a1;
+  margin-bottom: 20px;
+}
+
+.form-info-icon {
+  margin-right: 8px;
+}
+
+/* Form validation styles */
+.is-invalid {
+  border-color: #dc2626 !important;
+}
+
+.invalid-feedback {
+  color: #dc2626;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .add-doctor-container {
+    margin-top: 60px;
+    padding: 20px;
+  }
+  
+  .add-doctor-header {
+    max-width: 100%;
+  }
+  
+  .add-doctor-form-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .add-doctor-container {
+    padding: 20px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .doctor-preview-container {
+    width: 150px;
+    height: 150px;
+  }
+}

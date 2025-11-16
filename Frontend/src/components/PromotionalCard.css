@@ -1,0 +1,475 @@
+/* Promotional Card Styles */
+.promo-card-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2000;
+  backdrop-filter: blur(5px);
+}
+
+.promo-card-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  max-width: 520px;
+  background: linear-gradient(135deg, #a8e6cf 0%, #7dd3c0 50%, #5fb3a8 100%);
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  z-index: 2001;
+  overflow: hidden;
+  max-height: 95vh;
+  overflow-y: auto;
+  background-image: 
+    linear-gradient(135deg, rgba(168, 230, 207, 0.9) 0%, rgba(125, 211, 192, 0.9) 50%, rgba(95, 179, 168, 0.9) 100%),
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  background-size: 100% 100%, 200% 200%, 200% 200%;
+  margin: 0;
+  padding: 0;
+}
+
+.promo-card-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 2002;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.promo-card-close:hover {
+  background-color: #c0392b;
+  transform: scale(1.1);
+}
+
+.promo-card-content {
+  padding: 24px;
+  position: relative;
+}
+
+/* Header Section */
+.promo-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.promo-card-title-section {
+  flex: 1;
+}
+
+.promo-card-main-title {
+  font-size: 26px;
+  font-weight: 900;
+  color: #1a5490;
+  margin: 0 0 5px 0;
+  line-height: 1.2;
+}
+
+.promo-card-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a5490;
+  margin: 0 0 5px 0;
+}
+
+.promo-card-doctor {
+  font-size: 13px;
+  font-style: italic;
+  color: #1a5490;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* NABH Badge */
+.promo-card-nabh-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.nabh-badge {
+  width: 96px;
+  height: 96px;
+  background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nabh-text {
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 2px;
+}
+
+.nabh-certified {
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nabh-border {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  pointer-events: none;
+}
+
+/* Image Section */
+.promo-card-image-section {
+  width: 100%;
+  min-height: 240px;
+  margin: 20px 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.promo-card-main-image {
+  width: 100%;
+  height: auto;
+  min-height: 240px;
+  object-fit: contain;
+  border-radius: 15px;
+  display: block;
+}
+
+/* Footer Section */
+.promo-card-footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.promo-card-footer-row {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.promo-card-hospital-info {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 0;
+  flex: 1 1 260px;
+}
+
+.promo-card-quote {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.quote-text {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.hospital-logo-section {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.hospital-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.logo-s {
+  font-size: 28px;
+  font-weight: 900;
+  color: #1a5490;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a5490;
+  margin-left: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hospital-type {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+  font-weight: 500;
+}
+
+.promo-card-contact {
+  margin-bottom: 15px;
+}
+
+.contact-address {
+  margin-bottom: 10px;
+}
+
+.contact-address p {
+  font-size: 12px;
+  color: #333;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.contact-numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-numbers p {
+  font-size: 12px;
+  color: #1a5490;
+  margin: 0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-icon {
+  color: #27ae60;
+  font-size: 14px;
+}
+
+.knee-icon-small {
+  font-size: 24px;
+}
+
+.qr-code-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.qr-code-placeholder {
+  width: 64px;
+  height: 64px;
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-icon {
+  font-size: 40px;
+  color: #333;
+}
+
+.qr-text {
+  font-size: 11px;
+  color: #666;
+  margin: 0;
+  font-weight: 500;
+}
+
+.promo-card-cta-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #1a5490 0%, #2c5aa0 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 12px rgba(26, 84, 144, 0.25);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.promo-card-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(26, 84, 144, 0.4);
+  background: linear-gradient(135deg, #2c5aa0 0%, #1a5490 100%);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .promo-card-container {
+    width: 90%;
+    max-width: 420px;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .promo-card-content {
+    padding: 18px;
+  }
+
+  .promo-card-main-title {
+    font-size: 22px;
+  }
+
+  .promo-card-subtitle {
+    font-size: 18px;
+  }
+
+  .promo-card-doctor {
+    font-size: 12px;
+  }
+
+  .nabh-badge {
+    width: 76px;
+    height: 76px;
+  }
+
+  .nabh-text {
+    font-size: 14px;
+  }
+
+  .nabh-certified {
+    font-size: 7px;
+  }
+
+  .promo-card-image-section {
+    min-height: 200px;
+  }
+
+  .quote-text {
+    font-size: 18px;
+  }
+
+  .promo-card-hospital-info {
+    padding: 14px;
+  }
+
+  .logo-s {
+    font-size: 24px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .contact-address p {
+    font-size: 11px;
+  }
+
+  .contact-numbers p {
+    font-size: 12px;
+  }
+
+  .qr-code-placeholder {
+    width: 54px;
+    height: 54px;
+  }
+
+  .qr-icon {
+    font-size: 34px;
+  }
+
+  .promo-card-cta-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-card-container {
+    width: 95%;
+    max-width: 400px;
+    border-radius: 15px;
+    max-height: 90vh;
+  }
+
+  .promo-card-content {
+    padding: 15px;
+  }
+
+  .promo-card-main-title {
+    font-size: 20px;
+  }
+
+  .promo-card-subtitle {
+    font-size: 18px;
+  }
+
+  .promo-card-doctor {
+    font-size: 13px;
+  }
+
+  .nabh-badge {
+    width: 70px;
+    height: 70px;
+  }
+
+  .nabh-text {
+    font-size: 14px;
+  }
+
+  .nabh-certified {
+    font-size: 7px;
+  }
+
+  .promo-card-image-section {
+    height: 180px;
+  }
+
+  .quote-text {
+    font-size: 18px;
+  }
+
+  .promo-card-close {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .promo-card-footer-row {
+    flex-direction: column;
+  }
+}
+
