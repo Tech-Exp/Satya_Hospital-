@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Satya Hospital Project
 
 This repository contains a complete hospital management system with three main components:
@@ -160,3 +161,7 @@ For the Backend, set up appropriate environment variables for production use, an
 - The default admin credentials are not provided in this README. Please contact the system administrator for access.
 - Make sure MongoDB is running before starting the backend server.
 - For email functionality, ensure the SMTP settings in the config.env file are properly configured.
+=======
+# Satya_Hospital-
+hospital
+>>>>>>> abff0cf6ad1f0e8fd413f125b09f8e67f5585dc6
